@@ -1,0 +1,49 @@
+#N canvas 314 36 925 585 10;
+#X declare -lib mrpeach;
+#X obj 4 -19 serialosc_pd;
+#X obj 774 -15 output~;
+#X obj 64 313 s~ master;
+#X obj 737 -71 r~ master;
+#X obj 4 171 sample;
+#X obj 216 171 sample;
+#X obj 429 171 sample;
+#X obj 4 207 sample;
+#X obj 216 207 sample;
+#X obj 429 207 sample;
+#X obj 642 207 sample;
+#X obj 642 171 sample;
+#X obj 273 -19 bng 30 250 50 0 empty empty empty 17 7 0 10 -13330 -1
+-1;
+#X obj 308 -19 bng 30 250 50 0 empty empty empty 17 7 0 10 -13330 -1
+-1;
+#X obj 343 -19 bng 30 250 50 0 empty empty empty 17 7 0 10 -13330 -1
+-1;
+#X obj 378 -19 bng 30 250 50 0 empty empty empty 17 7 0 10 -13330 -1
+-1;
+#X obj 273 16 bng 30 250 50 0 empty empty empty 17 7 0 10 -13330 -1
+-1;
+#X obj 308 16 bng 30 250 50 0 empty empty empty 17 7 0 10 -13330 -1
+-1;
+#X obj 343 16 bng 30 250 50 0 empty empty empty 17 7 0 10 -13330 -1
+-1;
+#X obj 378 16 bng 30 250 50 0 empty empty empty 17 7 0 10 -13330 -1
+-1;
+#X connect 3 0 1 0;
+#X connect 3 0 1 1;
+#X connect 4 0 2 0;
+#X connect 5 0 2 0;
+#X connect 6 0 2 0;
+#X connect 7 0 2 0;
+#X connect 8 0 2 0;
+#X connect 9 0 2 0;
+#X connect 10 0 2 0;
+#X connect 11 0 2 0;
+#X connect 12 0 4 1;
+#X connect 13 0 5 1;
+#X connect 14 0 6 1;
+#X connect 15 0 11 1;
+#X connect 16 0 7 1;
+#X connect 17 0 8 1;
+#X connect 18 0 9 1;
+#X connect 19 0 10 1;
+#X coords 0 -1 1 1 850 300 2 0 -25;
