@@ -1,4 +1,4 @@
-#N canvas 563 39 991 730 10;
+#N canvas 333 48 991 730 10;
 #X declare -lib mrpeach;
 #X obj 3 -23 serialosc_pd;
 #X obj 774 -15 output~;
@@ -94,6 +94,9 @@
 #X restore 288 432 pd toggles;
 #X msg 292 486 /grid/led/set \$1 \$2 \$3;
 #X obj 235 310 r press_ary;
+#X obj 459 -60 route 0 1 2 3 4 5 6 7;
+#X msg 124 417 \$2 \$1;
+#X obj 127 463 route 1;
 #X connect 0 1 30 0;
 #X connect 3 0 1 0;
 #X connect 3 0 1 1;
@@ -127,9 +130,13 @@
 #X connect 35 0 24 0;
 #X connect 36 0 35 0;
 #X connect 37 0 38 0;
+#X connect 38 1 43 0;
 #X connect 38 2 39 0;
 #X connect 39 0 40 0;
 #X connect 40 0 24 0;
 #X connect 41 0 37 0;
 #X connect 41 0 20 0;
+#X connect 42 0 12 0;
+#X connect 43 0 44 0;
+#X connect 44 0 42 0;
 #X coords 0 -1 1 1 850 300 2 0 -25;
